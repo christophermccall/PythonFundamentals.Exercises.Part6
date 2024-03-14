@@ -1,3 +1,4 @@
+import this
 from typing import Iterable, Tuple, List, Union
 TicTacToeRow = List[str]
 TicTacToeBoard = Tuple[TicTacToeRow, TicTacToeRow, TicTacToeRow]
@@ -14,7 +15,20 @@ def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: st
     :param symbol: The symbol that should be placed in the column (X, or O)
     :return: None
     """
-    pass  # remove pass statement and implement me
+    my_board = tuple()
+
+    for i in range(3):
+        if i != pos_y:
+            my_board = (board[i],)
+        else:
+            row = board[i]
+            row[pos_x] = symbol
+            my_board = my_board + (row,)
+
+
+
+
+     # remove pass statement and implement me
 
 
 def count_instances(collection: Tuple, instance: Union[int, str]) -> int:
