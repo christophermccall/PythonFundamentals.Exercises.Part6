@@ -66,5 +66,10 @@ def print_items_with_index(items: Iterable):
     :param items: A tuple or a list
     :return: None
     """
-    pass  # remove pass statement and implement me
+    item_list = list(items)  # remove pass statement and implement me
+    for i in range(len(item_list)):
+        print(f'{i+1}: {item_list[i]}')
+    # item_list = enumerate(items, 1)
+    # for item in item_list:
+    #    print(item)
 
