@@ -17,7 +17,7 @@ def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: st
     """
     my_board = tuple()
 
-    for i in range(3):
+    for i in range(len(board)):
         if i != pos_y:
             my_board = (board[i],)
         else:
