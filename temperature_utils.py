@@ -35,11 +35,9 @@ def temperature_tuple(temperatures: Iterable, input_unit_of_measurement: str) ->
     h = ()
     for item in temperatures:
         if input_unit_of_measurement == 'f':
-            h += (item, float('{:.2f}'.format((item - 32) * 5 / 9))),
+           h+= (item, float('{:.2f}'.format((item - 32) * 5 / 9))),
         elif input_unit_of_measurement == 'c':
             h += (item, float('{:.2f}'.format((9/5 * item) + 32))),
-        else:
-           return () #h += (item,float('{:.2f}'.format((item - 32) * 5 / 9 + 273.15))),
     return h
 
 
