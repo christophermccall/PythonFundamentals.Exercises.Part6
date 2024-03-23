@@ -43,3 +43,5 @@ class TemperatureUtilsTest(unittest.TestCase):
         expected = ((1, 255.93), (2, 256.48), (3, 257.04))
         actual = temperature_utils_v2.temperature_tuple_v2(temps_input, "a")
         self.assertEqual(expected, actual)
+
+
